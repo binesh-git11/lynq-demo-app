@@ -1,0 +1,82 @@
+.header-l1 {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-Red;
+
+  .title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    
+    .icon{
+      fill: white !important;
+      width: 1.2em !important;
+      height: 1.2em !important;
+    }
+
+    .menu-tabs-root {
+      width: 95%;
+      margin: 0 10px;
+  
+      .menu-tab-root {
+        min-width: 20%;
+        z-index: 10;
+        padding: 0;
+        height: 100%;
+      }
+  
+      .menu-tabs-indicator {
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+        background-color: $color-DarkGray;
+  
+        &::before {
+          background: $color-Red;
+          width: 15px;
+          height: 20%;
+          content: "";
+          position: absolute;
+          left: -15px;
+          border-bottom-right-radius: 10px;
+          box-shadow: 10px 1px 0 0 $color-DarkGray;
+          bottom: 0;
+        }
+  
+        &::after {
+          background: $color-Red;
+          width: 15px;
+          height: 20%;
+          content: "";
+          position: absolute;
+          right: -15px;
+          border-bottom-left-radius: 10px;
+          box-shadow: -10px 1px 0 0 $color-DarkGray;
+          bottom: 0;
+        }
+      }
+    }
+
+    .subMenu-tabs-root {
+      background-color: $color-DarkGray;
+      min-height: 30px;
+
+      .subMenu-tab-root {
+        min-height: 30px;
+        height: 30px;
+
+        > * {
+          color: $color-LightGray;
+        }
+      }
+    }
+  }
+}

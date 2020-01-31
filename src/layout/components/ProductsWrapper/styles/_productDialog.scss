@@ -1,0 +1,102 @@
+.dialog-l1 {
+  position: absolute;
+  // max-height: 300px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  $main-pading: 20px;
+
+  .paper {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0 0 $borderRadius-small $borderRadius-small;
+  }
+
+  .container{
+
+    .close{
+      // position: absolute;
+      background-color: $color-Red;
+      border: none;
+      top: -20px;
+      border-radius: $borderRadius-small;
+      padding: 5px 10px;
+      margin: 10px 0;
+    }
+
+    .contentWrapper {
+      background-color: $color-DarkGray;
+      border-radius: $borderRadius-small;
+      display: flex;
+      max-width: 350px;
+      max-height: 300px;
+    }
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: $main-pading;
+
+      >b {
+        align-self: flex-start;
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+
+      >span {
+        font-size: 10px;
+        margin: 3px 0;
+      }
+
+      .desc {
+        // overflow: scroll;
+        // height: 90px;
+      }
+
+      .imageWrapper {
+        border-radius: $borderRadius-medium;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 80%;
+
+        > img {
+          object-fit: scale-down;
+          width: 20px;
+          height: auto;
+        }
+      }
+
+      &.right {
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 40%;
+        padding: $main-pading $main-pading $main-pading 5px;
+      }
+
+      &.left {
+        flex-basis: 60%;
+        padding: $main-pading 5px $main-pading $main-pading;
+      }
+    }
+
+    .button {
+      // position: absolute;
+      bottom: $main-pading;
+      right: $main-pading;
+      background-color: white;
+      border-radius: $borderRadius-medium;
+      font-size: 10px;
+      padding: 5px 8px;
+      height: 35px;
+      font-weight: 700;
+    }
+  }
+}

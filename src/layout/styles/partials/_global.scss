@@ -1,0 +1,46 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: $color-Complementary;
+
+  * {
+    font-family: "Roboto","Arial" !important;
+    // letter-spacing: .5px;
+    font-size: 13px;
+  }
+
+  b {
+    letter-spacing: 1px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  button {
+    cursor: pointer;
+
+    * {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $color-Complementary;
+
+    * {
+      cursor: pointer;
+    }
+
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}

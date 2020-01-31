@@ -1,0 +1,65 @@
+.options-l1 {
+  padding: 1rem;
+  .tips {
+    > p {
+
+    }
+
+    .buttons {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 1rem 0;
+
+      :first-child {
+        border-radius: $borderRadius-small 0 0 $borderRadius-small;
+      }
+
+      :last-child {
+        border-radius: 0 $borderRadius-small $borderRadius-small 0;
+      }
+
+      > button {
+        border: none;
+        background-color: $color-Gold;
+        margin: 0 1px;
+        padding: 10px 6px;
+        display: flex;
+        color: black;
+        font-weight: 500;
+
+        &:active {
+          background-color: $color-Secondary;
+        }
+      }
+    }
+  }
+
+  .invoice {
+    width: 100%;
+    >table {
+      width: 100%;
+      margin: 1rem 0;
+      > tr {
+        :first-child {
+          width: 80%;
+        }
+        > td {
+          padding: 3px;
+          &:last-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+    background-color: $color-Gold;
+    border: none;
+    padding: 10px 15px;
+    border-radius: $borderRadius-medium;
+    font-size: 1rem;
+  }
+}

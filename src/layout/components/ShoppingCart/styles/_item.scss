@@ -1,0 +1,98 @@
+.item-l1 {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+  
+
+  .image{
+    position: relative;
+    border-radius: $borderRadius-medium;
+    border: 1px solid $color-DarkGray;
+    background-color: $color-DimGray;
+
+    .tag {
+      position: absolute;
+      right: 0;
+      bottom: 80%;
+      left: 50%;
+      text-align: center;
+      min-width: 35px;
+      font-weight: 700;
+      background-color: $color-Gold;
+      color: $color-DarkGray;
+      font-size: 10px;
+      padding: 3px;
+      border-radius: $borderRadius-small;
+    }
+
+    > img {
+      object-fit: scale-down;
+      width: 50px;
+      height: 60px;
+    }
+  }
+
+  .infoWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    .info {
+      flex: 1;
+      padding: 0 1rem;
+  
+      .title {
+        font-size: 15px;
+      }
+  
+      .subTitle {
+        font-size: 10px;
+        color: $color-LightGray;
+      }
+    }
+  
+    .controls {
+      display: flex;
+      height: 18px;
+      
+      :first-child {
+        border-radius: 5px 0 0 5px;
+      }
+  
+      :last-child {
+        border-radius: 0 5px 5px 0;
+      }
+  
+      .quantity {
+        padding: 0 10px;
+      }
+  
+      .button {
+        border: none;
+        min-width: 25px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+      &.right {
+        background-color: $color-Gold;
+      }
+  
+      &.left {
+        background-color: transparent;
+        border: 1px solid $color-DimGray;
+        color: $color-UltraLightGray;
+      }
+      }
+    }
+  }
+
+  .icon {
+    margin: 0 15px;
+    fill: $color-Red;
+  }
+}
